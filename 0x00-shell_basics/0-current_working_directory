@@ -1,2 +1,2 @@
 #!/bin/bash
-pwd -P /n
+pwd -$path/n
