@@ -1,2 +1,2 @@
 #!/bin/bash
-grep "*/root/*" /tmp/passwd
+grep -x "/root/" /tmp/passwd
