@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-ps
+# Bash script to print its PID
+
+echo $$
