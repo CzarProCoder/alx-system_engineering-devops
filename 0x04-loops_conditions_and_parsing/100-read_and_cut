@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Read and extract fields in file
+# script should only display:
+# username
+# user id
+# Home directory path for the user
+
+file="/etc/passwd"
+
+while read LINE
+do
+    echo "$LINE" | cut -d ":" -f1,3,6
+done < "$file"
