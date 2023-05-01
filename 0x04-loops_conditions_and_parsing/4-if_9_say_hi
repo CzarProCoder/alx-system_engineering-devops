@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Script to print "best school" time times using while loop
+i=0
+while [ $i -lt 10 ]
+do
+    echo "Best School"
+    if [ $i == 8 ]
+    then
+        echo "Hi"
+    fi
+    (( i++ ))
+done
