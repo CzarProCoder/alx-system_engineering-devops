@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Groups visitors by IP and HTTP status code
+# Displays this data
+
+awk '{print $1 " " $9}' apache-access.log
