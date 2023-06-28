@@ -2,7 +2,7 @@
 # Script to innstall enginx on server
 # This script should be run on the server itself
 
-apt-get -y update
-apt-get -y install nginx
+sudo apt-get -y update
+sudo apt-get -y install nginx
 echo "Hello World!" > /var/www/html/index.nginx-debian.html
-service nginx start
+sudo service nginx start
