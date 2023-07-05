@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Script to configure server to listen to port 80
+<< desc
+Nginx must be running, and listening on port 80 of all the server’s active IPv4 IPs
+desc
+
+sudo sed -i 's/8080 default_server/80 default_server/g' /etc/nginx/sites-enabled/default
+sudo service nginx restart
