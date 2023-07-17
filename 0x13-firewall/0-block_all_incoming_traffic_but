@@ -1,0 +1,12 @@
+#!/bin/env bash
+#Update the system
+sudo apt update
+sudo apt upgrade
+
+#Install Uncomplicated Firewall
+sudo apt-get install ufw
+
+#Commands to allow access by port
+sudo ufw allow 22		# Allow access via port 22
+sudo ufw allow 443		# Allow access via port 443
+sudo ufw allow 80		# allow acess via port 80
