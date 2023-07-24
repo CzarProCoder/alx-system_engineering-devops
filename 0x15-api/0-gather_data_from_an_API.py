@@ -21,6 +21,7 @@ def main(id):
         user.get("name"), len(completed), len(todos)))
     [print("\t {}".format(c)) for c in completed]
 
+
 if __name__ == '__main__':
     '''Entry point of the program'''
     if argv:
