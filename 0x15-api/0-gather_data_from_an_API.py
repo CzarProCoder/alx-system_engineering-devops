@@ -9,6 +9,9 @@ from sys import argv
 
 
 def main(id):
+    '''
+    Entry function to check details of the user via id passed in argv
+    '''
     url = "https://jsonplaceholder.typicode.com/"
     user = requests.get(url + "users/{}".format(id)).json()
     todos = requests.get(url + "todos", params={"userId": id}).json()
