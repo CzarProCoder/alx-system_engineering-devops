@@ -1,0 +1,11 @@
+# Configures Nginx to serve the route /airbnb-onepage/ from AirBnB_clone_v2.
+
+server {
+    # Listen on port 80
+    listen 80;
+    server_name default_server;
+
+    location /airbnb-onepage/ {
+        proxy_pass http://localhost:5000/airbnb-onepage/;
+    }
+}
